@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+    padding:20px;
+    background-image: url("AVD.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+  }
+  
+  h1{text-align:center}
+  
+  .center{text-align:center}
+  .bold{font-weight:bold}
+  
+  .bill-info{
+    float:right;
+  }
+  
+  .ml{
+    margin-left:20px;
+  }
+  
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+  }
+  
+  th,td{
+    border:1px solid #ddd;
+    padding:8px;
+    text-align:center;
+  }
+  
+  th{
+    background:#222;
+    color:#fff;
+  }
+  
+  .btn{
+    padding:8px 14px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    color:#fff;
+    margin-right:5px;
+  }
+  
+  .btn-blue{background:#007bff}
+  .btn-green{background:#28a745}
+  .btn-gray{background:#6c757d}
+  
+  .total{
+    font-size:18px;
+    font-weight:bold;
+    text-align:right;
+    margin-top:10px;
+  }
+  
+  .machine-row{display:none}
+  #billArea{display:none}
+  
+  .history-box{
+    margin-top:20px;
+    display:none;
+  }
+  

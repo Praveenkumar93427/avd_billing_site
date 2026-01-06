@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machine Rental Billing</title>
+  <link rel="stylesheet" href="avd.css">
+</head>
+
+<body>
+<div class="container">
+
+  <h1>AVD ENTERPRISES</h1>
+  <p class="center bold">Gingee Road, Trends Textiles opp, Tindivanam-604001</p>
+  <p class="center bold">Machine Rental Billing</p>
+
+  <label>
+    Customer:
+    <input type="text" id="customer">
+  </label>
+
+  <div class="bill-info">
+    <b>Bill No:</b> <span id="billNo"></span><br>
+    <b>Date:</b> <span id="billDate"></span>
+  </div>
+
+  <br><br>
+
+  <label>
+    Rental Days:
+    <input type="number" id="days" value="1" min="1">
+  </label>
+
+  <label class="ml">
+    Search Machine:
+    <input type="text" id="searchMachine" oninput="filterMachines()">
+  </label>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Machine</th>
+        <th>₹ / Day</th>
+      </tr>
+    </thead>
+    <tbody id="machineList"></tbody>
+  </table>
+
+  <br>
+
+  <button class="btn btn-blue" onclick="generateBill()">Generate Bill</button>
+  <button class="btn btn-green" onclick="window.print()">Print / Download</button>
+  <button class="btn btn-gray" onclick="toggleHistory()">Bill History</button>
+  <button class="btn btn-blue" onclick="monthlyIncome()">1 Month Income</button>
+
+  <div class="total" id="total"></div>
+
+  <!-- BILL PRINT AREA -->
+  <div id="billArea">
+    <hr>
+    <h3>Bill Details</h3>
+    <table id="selectedTable">
+      <tr><th>Machine</th><th>Amount</th></tr>
+    </table>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="history-box" id="historyBox">
+    <h3>Last Bills</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+</div>
+
+<script src="avd.js"></script>
+</body>
+</html>
